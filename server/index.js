@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const pinRoute = require("./routes/pins")
 const userRoute = require("./routes/users");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 dotenv.config();
 
@@ -28,7 +28,7 @@ mongoose
  app.use("/api/pins", pinRoute);
  
 
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("backend is running")
 })
 
