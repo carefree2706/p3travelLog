@@ -5,13 +5,19 @@ const dotenv = require("dotenv");
 const pinRoute = require("./routes/pins")
 const userRoute = require("./routes/users");
 
+const PORT = process.env.PORT || 3000;
+
 dotenv.config();
 
 app.use(express.json());
 
+if (process.env.NODE_ENV ==="production"){
+    app.use(express.static("client/build"));
+}
+
 
 mongoose 
- .connect(process.env.MONGO_URL, {
+ .connect(process.env.MONGO_URL || "mongodb+srv://carefree2706:carefree2706@cluster0.c9zgi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",  {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,   })   
