@@ -28,7 +28,6 @@ mongoose
  app.use("/api/pins", pinRoute);
  
 
-app.listen(PORT,()=>{
-    console.log("backend is running")
-})
+ const server = require("http").createServer(app);
+ server.listen(PORT, () => console.log("server started"));
 
