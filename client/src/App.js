@@ -60,7 +60,7 @@ function App() {
   useEffect(() => {
     const getPins = async () => {
       try {
-        const allPins = await axios.get("/pins");
+        const allPins = await axios.get("/pin");
         setPins(allPins.data);
       } catch (err) {
         console.log(err);
@@ -81,8 +81,8 @@ function App() {
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}
         width="100%"
         height="100%"
-        transitionDuration="200"
-        mapStyle="mapbox://styles/donaldwu/ckp5jx4wb1bh517qpffevw2hz"
+        transitionDuration="20"
+        mapStyle="mapbox://styles/donaldwu/ckp4oxxuq1s1q17mz2k2989vc"
         onViewportChange={(viewport) => setViewport(viewport)}
         onDblClick={currentUsername && handleAddClick}
       >
