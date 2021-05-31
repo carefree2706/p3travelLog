@@ -14,7 +14,8 @@
     "react-map-gl": "^5.2.11",
     "react-scripts": "4.0.3",
     "timeago.js": "^4.0.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "dotenv": "^10.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
