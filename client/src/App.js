@@ -17,8 +17,8 @@ function App() {
   const [desc, setDesc] = useState(null);
   const [star, setStar] = useState(0);
   const [viewport, setViewport] = useState({
-    latitude: 47.040182,
-    longitude: 17.071727,
+    latitude: 1.3521,
+    longitude: 103.8198,
     zoom: 4,
   });
   const [showRegister, setShowRegister] = useState(false);
@@ -98,7 +98,7 @@ function App() {
                 style={{
                   fontSize: 7 * viewport.zoom,
                   color:
-                    currentUsername === p.username ? "tomato" : "slateblue",
+                    currentUsername === p.username ? "gold" : "slateblue",
                   cursor: "pointer",
                 }}
                 onClick={() => handleMarkerClick(p._id, p.lat, p.long)}
