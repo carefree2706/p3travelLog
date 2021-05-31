@@ -1,7 +1,7 @@
 import "./app.css";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { useEffect, useState } from "react";
-import { Room, Star } from "@material-ui/icons";
+import { RoomTwoTone, StarTwoTone } from "@material-ui/icons";
 import axios from "axios";
 import { format } from "timeago.js";
 import Register from "./components/Register";
@@ -94,7 +94,7 @@ function App() {
               offsetLeft={-3.5 * viewport.zoom}
               offsetTop={-7 * viewport.zoom}
             >
-              <Room
+              <RoomTwoTone
                 style={{
                   fontSize: 7 * viewport.zoom,
                   color:
@@ -121,7 +121,7 @@ function App() {
                   <p className="desc">{p.desc}</p>
                   <label>Rating</label>
                   <div className="stars">
-                    {Array(p.rating).fill(<Star className="star" />)}
+                    {Array(p.rating).fill(<StarTwoTone className="star" />)}
                   </div>
                   <label>Information</label>
                   <span className="username">
@@ -141,10 +141,10 @@ function App() {
               offsetLeft={-3.5 * viewport.zoom}
               offsetTop={-7 * viewport.zoom}
             >
-              <Room
+              <RoomTwoTone
                 style={{
                   fontSize: 7 * viewport.zoom,
-                  color: "tomato",
+                  color: "gold",
                   cursor: "pointer",
                 }}
               />
@@ -167,7 +167,7 @@ function App() {
                   />
                   <label>Description</label>
                   <textarea
-                    placeholder="Say us something about this place."
+                    placeholder="Tell us something special about this place."
                     onChange={(e) => setDesc(e.target.value)}
                   />
                   <label>Rating</label>

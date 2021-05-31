@@ -18,7 +18,13 @@ p#travelLog is a MERN stack application that lets users share their travel exper
 - Reac-map-gl
 
 
+
 ![Screenshot of live chat](images/map.png)
+
+## Questions
+* For collaboration and questions, please reach out to carefree2706@gmail.com
+
+* Contact me via Github [carefree2706@gmail.com](http://github.com/carefree2706@gmail.com)
 
 
 
